@@ -8,22 +8,20 @@
 <div>
 	<form action="salidaCalculadora.jsp">
 	<div>
-		<p>Introduce el primer número: <input type="number"></p>
-		<p>Introduce el segundo número: <input type="number"></p>
+		<p>Introduce el primer número: <input type="number" name ="firstNum" step="any"></p>
+		<p>Introduce el segundo número: <input type="number" name ="secondNum" step="any"></p>
 	</div>
 	<div>
 		<p>¿Qué operación quieres realizar?</p>
-		<button onclick="getElementById('suma').value='Suma'">Sumar</button>
-		<button onclick="getElementById('resta').value='Resta'">Restar</button>
-		<button onclick="getElementById('multiplicacion').value='Multiplicar'">Multiplicar</button>
-		<button onclick="getElementById('division').value='Dividir'">Dividir</button>
+		<button onclick="getElementById('operacion').value='suma'">Sumar</button>
+		<button onclick="getElementById('operacion').value='resta'">Restar</button>
+		<button onclick="getElementById('operacion').value='multiplicar'">Multiplicar</button>
+		<button onclick="getElementById('operacion').value='dividir'">Dividir</button>
 		
-		<input type="hidden" id="suma">
-		<input type="hidden" id="resta">
-		<input type="hidden" id="multiplicacion">
-		<input type="hidden" id="division">
+		<input type="hidden" id="operacion" name="operacion">
+		
 	</div>
-
+	
 </form>
 </div>
 </body>

@@ -26,32 +26,31 @@ public void setSecondNumber(float secondNumber) {
 	this.secondNumber = secondNumber;
 }
 
-public float addNumbers(float firstNumber, float secondNumber) {
+public float addNumbers() {
 	float result;
-	result = firstNumber + secondNumber;
+	result = this.firstNumber + this.secondNumber;
 	return result;
 }
 
-public float subtractNumbers(float firsNumber, float secondNumber) {
+public float subtractNumbers() {
 	float result;
-	result = firsNumber - secondNumber;
+	result = this.firstNumber - this.secondNumber;
 	return result; 
 }
 
-public float multiplyNumbers(float firsNumber, float secondNumber) {
+public float multiplyNumbers() {
 	float result;
-	result = firsNumber * secondNumber;
+	result = this.firstNumber * this.secondNumber;
 	return result; 
 }
 
-public float divideNumbers(float firsNumber, float secondNumber) throws calculadoraException {
+public float divideNumbers() throws CalculadoraException {
 	float result;
-	 if (firsNumber == 0 || secondNumber == 0) {
-		 throw new calculadoraException("No se puede dividir por cero.");
+	 if (this.secondNumber == 0) {
+		 throw new CalculadoraException("No se puede dividir por cero.");
 	 } else {
-		 result = firsNumber / secondNumber;
+		 result = this.firstNumber / this.secondNumber;
 	 }
-	
 	return result; 
 }
 

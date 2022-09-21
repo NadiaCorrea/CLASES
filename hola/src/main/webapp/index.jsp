@@ -22,4 +22,4 @@ if (hora > 20 || hora < 6){ %>
 	Buenas tardes
 <%}%></p>
 </body>
-</html
+</html>
